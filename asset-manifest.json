@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/github-pages-pujarig-app/static/css/main.4a4f4655.chunk.css",
+    "main.js": "/github-pages-pujarig-app/static/js/main.7aa8ff5e.chunk.js",
+    "main.js.map": "/github-pages-pujarig-app/static/js/main.7aa8ff5e.chunk.js.map",
+    "runtime-main.js": "/github-pages-pujarig-app/static/js/runtime-main.e4495e25.js",
+    "runtime-main.js.map": "/github-pages-pujarig-app/static/js/runtime-main.e4495e25.js.map",
+    "static/js/2.417687ed.chunk.js": "/github-pages-pujarig-app/static/js/2.417687ed.chunk.js",
+    "static/js/2.417687ed.chunk.js.map": "/github-pages-pujarig-app/static/js/2.417687ed.chunk.js.map",
+    "index.html": "/github-pages-pujarig-app/index.html",
+    "precache-manifest.593e7db507dc5374a1459427bf5d4c7d.js": "/github-pages-pujarig-app/precache-manifest.593e7db507dc5374a1459427bf5d4c7d.js",
+    "service-worker.js": "/github-pages-pujarig-app/service-worker.js",
+    "static/css/main.4a4f4655.chunk.css.map": "/github-pages-pujarig-app/static/css/main.4a4f4655.chunk.css.map",
+    "static/js/2.417687ed.chunk.js.LICENSE.txt": "/github-pages-pujarig-app/static/js/2.417687ed.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4495e25.js",
+    "static/js/2.417687ed.chunk.js",
+    "static/css/main.4a4f4655.chunk.css",
+    "static/js/main.7aa8ff5e.chunk.js"
+  ]
+}
