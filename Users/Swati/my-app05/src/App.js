@@ -11,6 +11,9 @@ import Booknow from "./Booknow";
 // work properly.
 
 export default function BasicExample() {
+  const loginUri = "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" +  getCallbackUrl();
+  const logoutUri = "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt5cvvhbt&logout_uri=" + getCallbackUrl();
+
   return (
     <Router>
       <div>
@@ -59,9 +62,9 @@ export default function BasicExample() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/login">
+                  <a className="nav-link" href={loginUri}>
                     Login
-                  </Link>
+                  </a>
                 </li>
                 
                 <li className="nav-item">
@@ -82,6 +85,14 @@ export default function BasicExample() {
       </Switch>
     </Router>
   );
+}
+
+function isProd() {
+  return window.location.href.indexOf('localhost') < 0;
+}
+
+function getCallbackUrl() {
+  return (isProd ? 'https://pujarig.com' : 'http://localhost:3000');
 }
 
 function openBookNow() {
