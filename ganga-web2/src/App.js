@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
-
+import {Animated} from "react-animated-css";
 import Booknow from "./Booknow";
 
 // This site has 3 pages, all of which are rendered dynamically in the browser (not server rendered).
@@ -51,27 +51,32 @@ export default function BasicExample() {
                     About
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#termsconditions">
-                    Terms & Conditions
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#contact">
-                    Contact
-                  </a>
-                </li>
-                <li className="nav-item">
+                <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+Contact
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#termsconditions">Terms & Conditions</a>
+          <a class="dropdown-item" href="#contact">Get In Touch</a>
+         
+        </div>
+      </li>
+               
+                
+               
+                <li className="nav-item ">
                   <a className="nav-link" href={loginUri}>
                     Login
                   </a>
                 </li>
-                
+                <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
                 <li className="nav-item">
                   <button onClick={openBookNow} className="nav-link booknow">
-                    Book N ow
+                    BOOKNOW
                   </button>
                 </li>
+                </Animated>
               </ul>
             </div>
           </div>

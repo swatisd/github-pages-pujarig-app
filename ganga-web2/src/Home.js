@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import {Animated} from "react-animated-css";
 
 // Unused components
 // import { Button, ButtonToolbar } from "react-bootstrap";
 // import { Booknow } from "./Booknow";
+
 
 class Home extends Component {
   render() {
@@ -16,30 +18,30 @@ class Home extends Component {
          
           <div className="carousel-inner">
             <div className="carousel-item active">
-            <img src={process.env.PUBLIC_URL+"/img/header-bg.jpg"} className="d-block w-100" alt="..." />
+            <img src={process.env.PUBLIC_URL+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block">
-              <h3>Welcome to Pujarig</h3>
-                <p>
+              <h2>Welcome to Pujarig</h2>
+              <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
-                </p>
+                </h5>
               </div>
             </div>
             <div className="carousel-item">
             <img src={process.env.PUBLIC_URL+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block">
-              <h3>Welcome to Pujarig</h3>
-                <p>
+              <h2>Welcome to Pujarig</h2>
+                <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
-                </p>
+                </h5>
               </div>
             </div>
             <div className="carousel-item">
-            <img src={process.env.PUBLIC_URL+"/img/banner3.jpg"} className="d-block w-100" alt="..." />
+            <img src={process.env.PUBLIC_URL+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block">
-              <h3>Welcome to Pujarig</h3>
-                <p>
+              <h2>Welcome to Pujarig</h2>
+              <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
-                </p>
+                </h5>
               </div>
             </div>
           </div>
@@ -83,24 +85,29 @@ class Home extends Component {
               </div>
             </div>
             <div class="row text-center animated bounce">
-              <div class="col-md-4">
+            
+              <div class="col-md-4 showbox ">
+              
                 <img
                   class="img-fluid  "
                   src={process.env.PUBLIC_URL+"/img/one.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
+               
                 <h4 class="service-heading">Satyanarayan Vrat Katha</h4>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 showbox">
                 <img
                   class="img-fluid "
-                  src={process.env.PUBLIC_URL+"/img/one.jpg"}
+                  src={process.env.PUBLIC_URL+"/img/two.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
-                <h4 class="service-heading">Grih Parvesh</h4>
+                <h4 class="service-heading ">Grih Parvesh</h4>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 showbox ">
+              
                 <img class="img-fluid" src={process.env.PUBLIC_URL+"/img/three.jpg"} alt="Mundan" />
+                
                 <h4 class="service-heading">Mundan</h4>
               </div>
             </div>
@@ -419,18 +426,18 @@ class Home extends Component {
               <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
+                    <a href="https://developer.twitter.com/en/docs/twitter-for-websites/follow-button/overview">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="https://www.facebook.com/pujarig.online/">
+                      <i class="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
                     <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
+                      <i class="fa fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
@@ -438,10 +445,10 @@ class Home extends Component {
               <div class="col-md-4">
                 <ul class="list-inline quicklinks">
                   <li class="list-inline-item">
-                    <a href="#">Contact @</a>
+                    <a href="#contact">Contact @</a>
                   </li>
                   <li class="list-inline-item">
-                    <a href="#termsandconditions">Terms of Use</a>
+                    <a href="#termsconditions">Terms of Use</a>
                   </li>
                 </ul>
               </div>
