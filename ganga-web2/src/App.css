@@ -65,7 +65,7 @@ a:hover {
   background-color: #ffa600;
   color: #fff !important;
   border-radius: 15px 50px;
- 
+  box-shadow: 0 0 10px #eee;
   transition: 0.3s;
   border: none;
   padding: 7px  !important;
@@ -374,8 +374,8 @@ section#contact .form-control:focus {
   color: #fff;
 }
 .btn-primary {
-  background-color: #ffa600;
-  border-color: #ffa600;
+  background-color: #ffa600 !important;
+  border-color: #ffa600 !important;
 }
 .btn-xl {
   font-size: 18px;
@@ -525,4 +525,47 @@ ul.social-buttons li a {
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
+}
+.list-inline-item.instagram {
+  display: none;
+}
+.slider1 {
+  border-radius: 50%;
+  color: #fff;
+  text-shadow: 1px 2px 4px #000000;
+  background-color:#E9360B;
+}
+.slider2 {
+  border-radius: 40px 10px;
+background-color: #3A0B01;
+color: #fff;
+  text-shadow: 1px 2px 4px #000000;
+}
+.slider3 {
+  background-color: #21013A;
+  border-radius: 15px 50px 30px;
+  color: #fff;
+  text-shadow: 1px 2px 4px #000000;
+}
+.error-msg {
+  color: #ffa600;
+}
+.react-datepicker__header  {
+  background-color: #ffa600;
+  border-bottom: 1px solid #f0f0f0;
+
+}
+.react-datepicker {
+  border: 1px solid #f0f0f0;
+}
+.react-datepicker__day--keyboard-selected:hover, .react-datepicker__month-text--keyboard-selected:hover,
+ .react-datepicker__quarter-text--keyboard-selected:hover {
+  background-color: #fed136; 
+}
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, 
+.react-datepicker__quarter-text--keyboard-selected {
+  background-color: #ffa600;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+  color: #fff;
 }

@@ -225,7 +225,7 @@ class Booknow extends Component {
                 dateFormat="MMMM d, yyyy h:mm aa"
                 minDate={this.addDays(new Date(), 7)}
               />
-              <small hidden={!this.state.validationErrors.datetime} id="datetimeHelp" class="form-text text-muted">
+              <small hidden={!this.state.validationErrors.datetime} id="datetimeHelp" class="form-text error-msg">
                 Select date and time.
               </small>
             </div>
@@ -241,7 +241,7 @@ class Booknow extends Component {
                 <option value="rudrabhishek">Rudrabhishek</option>
                 <option value="other">Other</option>
               </select>
-              <small hidden={!this.state.validationErrors.ceremony} id="ceremonyeHelp" class="form-text text-muted">
+              <small hidden={!this.state.validationErrors.ceremony} id="ceremonyeHelp" class="form-text error-msg">
                 Ceremony should not be left blank.
               </small>
             </div>
@@ -250,7 +250,7 @@ class Booknow extends Component {
               <input type="tel" class="form-control" id="mobile" aria-describedby="numberhelp" placeholder="Example: +49 151 234567"
                 onChange={(event) => this.handleInputChange(event)} value={this.state.mobile}
               />
-              <small hidden={!this.state.validationErrors.mobile} id="mobileHelp" class="form-text text-muted">
+              <small hidden={!this.state.validationErrors.mobile} id="mobileHelp" class="form-text error-msg">
                 Enter a valid mobile number.
               </small>
             </div>
@@ -258,7 +258,7 @@ class Booknow extends Component {
               <div class="form-group col-md-6">
                 <label for="city">City<sup>*</sup></label>
                 <input type="text" class="form-control" id="city" onChange={this.handleInputChange} placeholder="Enter City" value={this.state.city}/>
-                <small hidden={!this.state.validationErrors.city} id="cityHelp" class="form-text text-muted">
+                <small hidden={!this.state.validationErrors.city} id="cityHelp" class="form-text error-msg">
                   Enter a valid city name.
               </small>
               </div>
@@ -269,7 +269,7 @@ class Booknow extends Component {
               <div class="form-group col-md-6">
                 <label for="country">Country<sup>*</sup></label>
                 <input type="text" class="form-control" id="country" onChange={this.handleInputChange} placeholder="Enter Country" value={this.state.country}/>
-                <small hidden={!this.state.validationErrors.country} id="countryHelp" class="form-text text-muted">
+                <small hidden={!this.state.validationErrors.country} id="countryHelp" class="form-text error-msg">
                   Enter a valid country name.
               </small>
               </div>
@@ -277,7 +277,7 @@ class Booknow extends Component {
               <div class="form-group col-md-6">
                 <label for="postcode">Post Code<sup>*</sup></label>
                 <input type="text" class="form-control" id="postcode" onChange={this.handleInputChange} placeholder="Enter Post Code" value={this.state.postcode}/>
-                <small hidden={!this.state.validationErrors.postcode} id="postcodeHelp" class="form-text text-muted">
+                <small hidden={!this.state.validationErrors.postcode} id="postcodeHelp" class="form-text  error-msg">
                   Enter a valid postcode.
               </small>
               </div>
@@ -291,7 +291,7 @@ class Booknow extends Component {
               <label for="exampleFormControlTextarea1">By clicking 'Submit' button, you agree to the <a class="booktc" href="termsconditions"> Terms and Conditions</a></label>
               <button disabled={!this.state.okToSend} id="submit" class="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button>
               {/* <button onSubmit={this.onSubmit} id="submit" class="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button> */}
-              <small hidden={this.state.okToSend} id="submitHelp" class="form-text text-muted">
+              <small hidden={this.state.okToSend} id="submitHelp" class="form-text  error-msg">
                 {this.state.submitButtonText}
               </small>
             </div>

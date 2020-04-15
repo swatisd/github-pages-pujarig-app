@@ -19,7 +19,7 @@ class Home extends Component {
           <div className="carousel-inner">
             <div className="carousel-item active">
             <img src={process.env.PUBLIC_URL+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block slider1">
               <h2>Welcome to Pujarig</h2>
               <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
@@ -28,7 +28,7 @@ class Home extends Component {
             </div>
             <div className="carousel-item">
             <img src={process.env.PUBLIC_URL+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block slider2">
               <h2>Welcome to Pujarig</h2>
                 <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
@@ -37,7 +37,7 @@ class Home extends Component {
             </div>
             <div className="carousel-item">
             <img src={process.env.PUBLIC_URL+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
-              <div className="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block slider3">
               <h2>Welcome to Pujarig</h2>
               <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
@@ -316,7 +316,7 @@ class Home extends Component {
             </div>
             <div class="row">
               <div class="col-lg-12">
-                <form
+                <form onSubmit={this.handleSubmit}
                   id="contactForm"
                   name="sentMessage"
                   novalidate="novalidate"
@@ -373,7 +373,7 @@ class Home extends Component {
                     <div class="col-lg-12 text-center">
                       <div id="success"></div>
                       <button
-                        id="sendMessageButton"
+                        id="sendMessageButton "
                         class="btn btn-primary btn-xl text-uppercase"
                         type="submit"
                       >
@@ -426,7 +426,7 @@ class Home extends Component {
               <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                   <li class="list-inline-item">
-                    <a href="https://developer.twitter.com/en/docs/twitter-for-websites/follow-button/overview">
+                    <a href="https://twitter.com/pujarigdotcom">
                       <i class="fa fa-twitter"></i>
                     </a>
                   </li>
@@ -435,7 +435,7 @@ class Home extends Component {
                       <i class="fa fa-facebook"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li class="list-inline-item instagram">
                     <a href="#">
                       <i class="fa fa-instagram"></i>
                     </a>
