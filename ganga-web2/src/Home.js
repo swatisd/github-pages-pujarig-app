@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import {Animated} from "react-animated-css";
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
 
 // Unused components
 // import { Button, ButtonToolbar } from "react-bootstrap";
 // import { Booknow } from "./Booknow";
+
+const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
 
 
 class Home extends Component {
@@ -75,9 +79,12 @@ class Home extends Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
+              <Bounce>
                 <h2 class="section-heading text-uppercase">
                   Featured Pooja Categories
+                  <hr class="fpc"></hr>
                 </h2>
+                </Bounce>
                 <h3 class="section-subheading text-muted">
                   Pujarig.com facilitates online puja and delivers needed
                   supplies.
@@ -113,12 +120,15 @@ class Home extends Component {
             </div>
           </div>
         </section>
-
+        
         <section class="page-section" id="about">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">About Us</h2>
+              <Bounce>
+                <h2 class="section-heading text-uppercase">About Us
+                <hr class="abtus"></hr></h2>
+                </Bounce>
                 <h3 class="section-subheading text-muted">
                   How it all started.
                 </h3>
@@ -238,9 +248,12 @@ class Home extends Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
+              <Bounce>
                 <h2 class="section-heading text-uppercase">
                   Terms &amp; Conditions
+                  <hr class="tnc"></hr>
                 </h2>
+                </Bounce>
                 <h3 class="section-subheading text-muted">
                   You agree to the below terms and conditions by login into
                   pujarig.com or by using one of its services.
@@ -307,7 +320,10 @@ class Home extends Component {
             <div class="row">
               <div class="col-lg-12 text-center">
               <div>
+              <Bounce>
                 <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <hr class="cnctus"></hr>
+                </Bounce>
                 <h3 class="section-subheading text-muted contactu">
                   You can always write to Us for any queries.
                 </h3>
@@ -392,9 +408,12 @@ class Home extends Component {
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
+              <Bounce>
                 <h2 class="section-heading text-uppercase location">
                   Our Locations
+                  <hr class="lctn"></hr>
                 </h2>
+                </Bounce>
                 <h3 class="section-subheading text-muted"></h3>
               </div>
             </div>

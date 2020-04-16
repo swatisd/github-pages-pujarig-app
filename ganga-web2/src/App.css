@@ -603,3 +603,21 @@ color: #fff;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+
+      hr.cnctus {
+        width: 18%;
+        border-top: 1px solid #fff;
+      }
+      hr.tnc {
+        width: 34%;
+      }
+      hr.abtus {
+        width: 17%;
+      }
+      hr.fpc {
+        width: 40%;
+      }
+      hr.lctn {
+        width: 25%;
+        border-top: 1px solid #fff;
+      }

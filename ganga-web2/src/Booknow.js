@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Ajv from 'ajv';
+import Sky from 'react-sky';
 
 class Booknow extends Component {
   constructor(props) {
@@ -212,8 +213,25 @@ class Booknow extends Component {
   render() {
     return (
       <div>
+
+
+        
         <div className="container">
+        
           <form onSubmit={this.handleSubmit} class="book">
+          <Sky
+          images={{
+            /* FORMAT AS FOLLOWS */
+            0: "http://clipart-library.com/images_k/transparent-leaf-png/transparent-leaf-png-10.png",  /* You can pass as many images as you want */
+            1: "http://www.pngall.com/wp-content/uploads/2016/04/Coconut-Free-Download-PNG.png",
+            2: "http://clipart-library.com/data_images/30366.png    ",
+          }}
+          how={130} /* Pass the number of images Sky will render chosing randomly */
+          time={40} /* time of animation */
+          size={'50px'} /* size of the rendered images */
+          background={'palettedvioletred'} /* color of background */
+        />
+        
             <div className="form-group">
               <label for="datepicker-input">Date and Time<sup>*</sup></label>
               <DatePicker className="datepicker" id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}

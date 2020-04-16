@@ -4,6 +4,10 @@ import Home from "./Home";
 // import Login from "./Login";
 import { Animated } from "react-animated-css";
 import Booknow from "./Booknow";
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
+
+const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
 
 // This site has 3 pages, all of which are rendered dynamically in the browser (not server rendered).
 // Although the page does not ever refresh, notice how React Router keeps the URL up to date as you navigate
@@ -35,7 +39,7 @@ export default function BasicExample() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-
+           
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
@@ -46,6 +50,7 @@ export default function BasicExample() {
                     Services <span className="sr-only">(current)</span>
                   </a>
                 </li>
+                
                 <li className="nav-item">
                   <a className="nav-link" href="/#about">
                     About
@@ -66,6 +71,8 @@ export default function BasicExample() {
                     Login
                   </a>
                 </li>
+
+                
                 <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
                   <li className="nav-item">
                     <button onClick={openBookNow} className="nav-link booknow">
