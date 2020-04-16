@@ -216,13 +216,14 @@ class Booknow extends Component {
           <form onSubmit={this.handleSubmit} class="book">
             <div className="form-group">
               <label for="datepicker-input">Date and Time<sup>*</sup></label>
-              <DatePicker id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}
+              <DatePicker className="datepicker" id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}
                 showPopperArrow={false}
                 showTimeSelect
                 timeFormat="HH:mm"
                 timeIntervals={15}
                 timeCaption="time"
                 dateFormat="MMMM d, yyyy h:mm aa"
+                placeholderText="Select Schedule Date"
                 minDate={this.addDays(new Date(), 7)}
               />
               <small hidden={!this.state.validationErrors.datetime} id="datetimeHelp" class="form-text error-msg">
