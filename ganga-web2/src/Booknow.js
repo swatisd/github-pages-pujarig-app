@@ -79,7 +79,7 @@ class Booknow extends Component {
              window.location = window.location.href.split('&state')[0];
            }
           this.setState({
-            vceremony: "",
+            ceremony: "",
             datetime: null,
             mobile: "",
             city: "",
