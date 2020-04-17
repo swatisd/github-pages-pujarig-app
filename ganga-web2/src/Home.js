@@ -1,16 +1,95 @@
 import React, { Component } from "react";
-import {Animated} from "react-animated-css";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+import PujariGCommon from "./PujariGCommon";
+const common = new PujariGCommon();
+
 
 // Unused components
 // import { Button, ButtonToolbar } from "react-bootstrap";
 // import { Booknow } from "./Booknow";
+// import {Animated} from "react-animated-css";
 
 const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
 
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+      idToken: "userNotLoggedin",
+      queryButtonHidden: true
+    };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  componentDidMount() {
+    const state = common.loginHelper(this.state);
+    this.setState(state);
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const id = target.id;
+    this.setState({
+      [id]: value,
+      queryButtonHidden: true,
+    });
+  }
+  
+  handleSubmit(event) {
+    event.preventDefault();
+    const queryData = {
+      name: this.state.name,
+      phone: this.state.phone,
+      email: this.state.email,
+      message: this.state.message
+    }
+    
+    if(!queryData.name || !queryData.email || !queryData.phone)
+      return false;
+
+    const req = new XMLHttpRequest();
+    req.open("POST", "https://api.pujarig.com/d1/customerquery", true);
+    req.setRequestHeader('Content-Type', 'application/json');
+    req.send(JSON.stringify(queryData));
+    req.onreadystatechange = (e) => {
+      if (req.readyState === 4) {
+        // console.log("req.status: " + req.status);
+        if (req.status === 200) {
+          this.setState({
+            name: "",
+            phone: "",
+            email: "",
+            message: "",
+            submitButtonText:  "Thank you for contacting us. We shall get back to you within 2 working days.",
+            queryButtonHidden: false
+          });
+          return false;
+        } else if (req.status === 400) {
+          // console.log("req.status === 400");
+          this.setState({
+            submitButtonText:  "Server received invalid input, if the proble persist, please write to admin@pujarig.com",
+            queryButtonHidden: false
+          });
+        } else {
+          // console.log("req.status === ***");
+          this.setState({
+            submitButtonText:  "Unknown response from the server, please write to admin@pujarig.com",
+            queryButtonHidden: false
+          });
+        }
+      }
+    }
+  }
+
   render() {
     return (
       <div>
@@ -347,6 +426,8 @@ class Home extends Component {
                           placeholder="Your Name *"
                           required=""
                           data-validation-required-message="Please enter your name."
+                          onChange={this.handleInputChange}
+                          value={this.state.name}
                         />
                         <p class="help-block text-danger"></p>
                       </div>
@@ -358,6 +439,8 @@ class Home extends Component {
                           placeholder="Your Email *"
                           required=""
                           data-validation-required-message="Please enter your email address."
+                          onChange={this.handleInputChange}
+                          value={this.state.email}
                         />
                         <p class="help-block text-danger"></p>
                       </div>
@@ -369,6 +452,8 @@ class Home extends Component {
                           placeholder="Your Phone *"
                           required=""
                           data-validation-required-message="Please enter your phone number."
+                          onChange={this.handleInputChange}
+                          value={this.state.phone}
                         />
                         <p class="help-block text-danger"></p>
                       </div>
@@ -381,6 +466,8 @@ class Home extends Component {
                           placeholder="Your Message *"
                           required=""
                           data-validation-required-message="Please enter a message."
+                          onChange={this.handleInputChange}
+                          value={this.state.message}
                         ></textarea>
                         <p class="help-block text-danger"></p>
                       </div>
@@ -395,7 +482,9 @@ class Home extends Component {
                       >
                         Send Message
                       </button>
-                      
+                      <small hidden={this.state.queryButtonHidden} id="submitHelp" class="form-text  error-msg">
+                        {this.state.submitButtonText}
+                      </small>
                     </div>
                   </div>
                 </form>

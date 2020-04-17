@@ -3,6 +3,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Ajv from 'ajv';
 import Sky from 'react-sky';
+import PujariGCommon from "./PujariGCommon";
+const ajv = new Ajv({ allErrors: true });
+const common = new PujariGCommon();
 
 class Booknow extends Component {
   constructor(props) {
@@ -28,38 +31,8 @@ class Booknow extends Component {
   }
 
   componentDidMount() {
-    // console.log("component did mount");
-    let currentURL = window.location.href;
-    let state = Object.assign({}, this.state);
-    // console.log("state before:" + JSON.stringify(state));
-
-    if (currentURL.indexOf('state') > 0) {
-      state = JSON.parse(atob(currentURL.split('state=')[1].split('&')[0]));
-      state.datetime = new Date(state.datetime);
-    }
-    
-    
-    if (currentURL.indexOf('id_token') > 0) {
-      let params = currentURL.split('#')[1];
-      const idToken = params.split('id_token=')[1].split('&')[0];
-      state.idToken = idToken;
-      const req = new XMLHttpRequest();
-      req.open("GET", "https://api.pujarig.com/d1/user");
-      req.setRequestHeader('Authorization', idToken);
-      req.send();
-      req.onreadystatechange = (e) => {
-        if (req.readyState === 4) {
-          // console.log(req.responseTex);
-          const user = JSON.parse(req.responseText);
-        }
-      }
-    }
-    // console.log("state after parse:" + JSON.stringify(state));
-
+    const state = common.loginHelper(this.state);
     this.setState(state);
-    // if(currentURL.indexOf('state') > 0){
-    //   window.location = currentURL.split('#')[0];
-    // }
   }
 
   handleDateChange(event) {
@@ -193,7 +166,6 @@ class Booknow extends Component {
       }
     };
 
-    const ajv = new Ajv({ allErrors: true });
     let validationErrors = Object.assign({}, this.state.validationErrors);
     // console.log(value);
     let valid = ajv.validate(schema.properties[id], value);
@@ -212,10 +184,7 @@ class Booknow extends Component {
 
   render() {
     return (
-      <div>
-
-
-        
+      <div>   
         <div className="container">
         
           <form onSubmit={this.handleSubmit} class="book">
