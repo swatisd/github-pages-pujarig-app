@@ -101,27 +101,27 @@ class Home extends Component {
          
           <div className="carousel-inner">
             <div className="carousel-item active">
-            <img src={process.env.PUBLIC_URL+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
+            <img src={window.location.origin+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider1">
-              <h2>Welcome to Pujarig</h2>
+              <h2>Welcome to PujariG</h2>
               <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
               </div>
             </div>
             <div className="carousel-item">
-            <img src={process.env.PUBLIC_URL+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
+            <img src={window.location.origin+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider2">
-              <h2>Welcome to Pujarig</h2>
+              <h2>Welcome to PujariG</h2>
                 <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
               </div>
             </div>
             <div className="carousel-item">
-            <img src={process.env.PUBLIC_URL+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
+            <img src={window.location.origin+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider3">
-              <h2>Welcome to Pujarig</h2>
+              <h2>Welcome to PujariG</h2>
               <h5>
                 Pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
@@ -176,7 +176,7 @@ class Home extends Component {
               
                 <img
                   class="img-fluid  "
-                  src={process.env.PUBLIC_URL+"/img/one.jpg"}
+                  src={window.location.origin+"/img/one.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
                
@@ -185,14 +185,14 @@ class Home extends Component {
               <div class="col-md-4 showbox">
                 <img
                   class="img-fluid "
-                  src={process.env.PUBLIC_URL+"/img/two.jpg"}
+                  src={window.location.origin+"/img/two.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
                 <h4 class="service-heading ">Grih Parvesh</h4>
               </div>
               <div class="col-md-4 showbox ">
               
-                <img class="img-fluid" src={process.env.PUBLIC_URL+"/img/three.jpg"} alt="Mundan" />
+                <img class="img-fluid" src={window.location.origin+"/img/mundan.jpg"} alt="Mundan" />
                 
                 <h4 class="service-heading">Mundan</h4>
               </div>
@@ -220,22 +220,21 @@ class Home extends Component {
                     <div class="timeline-image">
                       <img
                         class="rounded-circle img-fluid"
-                        src={process.env.PUBLIC_URL+"/img/1.jpg"}
+                        src={window.location.origin+"/img/1.jpg"}
                         alt=""
                       />
                     </div>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4>2009-2011</h4>
-                        <h4 class="subheading">Our Humble Beginnings</h4>
+                        <h4>2016-2017</h4>
+                        <h4 class="subheading">A challange was encountered</h4>
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          I am Ruchi, a full time baker livIng in Berlin and a
-                          textile designer by profession, a proud Indian not
-                          just by origin but also by values, born and brought up
-                          in Rajput family where religious ceremonies and
-                          rituals are integral part of daily life.
+                          We wanted to have puja rituals for Grih Pravesh according to the north
+                          Indian traditions. But we could not find a pandit ji in Berlin. Our family pandit ji
+                          came online to give us the directions to perform the rituals rightly.
+                          <p>It was a huge satisfaction as an expat!</p>
                         </p>
                       </div>
                     </div>
@@ -244,19 +243,19 @@ class Home extends Component {
                     <div class="timeline-image">
                       <img
                         class="rounded-circle img-fluid"
-                        src={process.env.PUBLIC_URL+"/img/2.jpg"}
+                        src={window.location.origin+"/img/risingsun.png"}
                         alt=""
                       />
                     </div>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4>March 2011</h4>
-                        <h4 class="subheading">An Agency is Born</h4>
+                        <h4>2018</h4>
+                        <h4 class="subheading">A concept was created</h4>
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          I started pujarig.com out of my own need when I wanted
-                          to have grih pravesh puja for my new house!!
+                          To benefit others like us, pujarig.com was incepted. We onboard qualified PujariGs who are available on
+                          various online channels across different timezones.
                         </p>
                       </div>
                     </div>
@@ -265,23 +264,19 @@ class Home extends Component {
                     <div class="timeline-image">
                       <img
                         class="rounded-circle img-fluid"
-                        src={process.env.PUBLIC_URL+"/img/3.jpg"}
+                        src={window.location.origin+"/img/2.jpg"}
                         alt=""
                       />
                     </div>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4>December 2012</h4>
-                        <h4 class="subheading">Transition to Full Service</h4>
+                        <h4>2019</h4>
+                        <h4 class="subheading">Transition to full service</h4>
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          The pujari jee of our choice was only available in a
-                          different city, a few hundred kilometers away ! It was
-                          too expensive in terms of both time and money to
-                          arrange his trip to Berlin. So the idea of online puja
-                          sparkled and I conducted online puja for the ceremony
-                          !
+                          To give you worry free experience, pujarig.com send you the ingredients needed for the rituals at a nominal cost. You only pay 
+                          the cost of ingredients to us. Dakshina (honorary) is paid to the PujariG in a transparent manner.
                         </p>
                       </div>
                     </div>
@@ -290,18 +285,17 @@ class Home extends Component {
                     <div class="timeline-image">
                       <img
                         class="rounded-circle img-fluid"
-                        src={process.env.PUBLIC_URL+"/img/4.jpg"}
+                        src={window.location.origin+"/img/4n.jpg"}
                         alt=""
                       />
                     </div>
                     <div class="timeline-panel">
                       <div class="timeline-heading">
-                        <h4 class="subheading">For More Info &amp; Queries</h4>
+                        <h4 class="subheading">For more info &amp; queries</h4>
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          You can always write to admin@pujarig.com for further
-                          queries !
+                          You can always write to admin@pujarig.com !
                         </p>
                       </div>
                     </div>
@@ -350,45 +344,37 @@ class Home extends Component {
               <hr />
               <h3>How do we use your data?</h3>
               <p>
-                We use your data to store your online Puja requests, to perform
-                online puja, and to send Puja ingredients.
-              </p>
-              <hr />
-              <h3>What personal data do we store?</h3>
-              <p>
-                We primarily collect email, mobile phone, name, and address. We
-                may ask for additional details to facilitate online Puja
-                (Example: Skype Id).
+                We use your data to to perform online puja and to send Puja ingredients.
               </p>
               <hr />
               <h3>Do we share data with anyone?</h3>
               <p>
-                We share your contact and location data with Pujari Ji who is
-                supposed to perform Puja. We may also share your address to our
-                trusted partners to send Puja ingredients to you.
+                We share your contact and location details with the pujari ji who is
+                supposed to perform the puja. We may also share your address to our
+                trusted partners to get the puja ingredients delivered to you.
               </p>
               <hr />
               <h3>How to remove your data from our servers?</h3>
               <p>
-                Please send an email to @pujarig.com from your registered email
-                address and ask us to delete your data. We may still have to
+                Please send an email to admin@pujarig.com from your registered email
+                address asking us to delete your data. We may still have to
                 keep some of the data due to the legal requirements.
               </p>
               <hr />
               <h2>Our Liabilties</h2>
               <p>
-                We limit our liabilities to refund the money directly taken by
-                pujarig.com when the Puja is cancelled or delayed by more than 2
-                hours.
+                We strive to give you the best possible experience. But  
+                when a puja cannot be performed or delayed by more than 2
+                hours due to the non availability of the pujari ji on our platform, we limit our liabilities to refund the money towards the Dakshina payment.
+                The puja ingredients have to be returned in order to get a refund for the same.
               </p>
               <p>
                 We cannot be held liable for the damages caused by the other
-                service providers affiliated to pujarig.com.
+                service providers directly or indirectly associtated with pujarig.com or its services.
               </p>
               <p>
-                Please be aware that we are still in a very early stage of
-                pujarig.com service development and are learning to serve you
-                better. Hence, some minor service disruptions may be expected.
+                We keep on learning to serve you better. Please write your feedback and concerns to admin@pujarig.com or 
+                on the <a href="#contact">contact </a> form. We shall get back to you in 2 working days.
               </p>
             </section>
           </div>
@@ -519,6 +505,7 @@ class Home extends Component {
                   <p>3, Patel Nagar ext.Near Sector 9</p>
                   <p>Indira Nagar, Lucknow, UP</p>
                   <p>226016</p>
+                  <p>Whatsapp: +91 9120890061</p>
                 </section>
               </div>
             </section>
