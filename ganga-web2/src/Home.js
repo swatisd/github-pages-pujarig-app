@@ -295,7 +295,7 @@ class Home extends Component {
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          You can always write to admin@pujarig.com !
+                          You can always write to <a href="mailto://admin@pujarig.com">admin@pujarig.com </a> !
                         </p>
                       </div>
                     </div>
@@ -356,7 +356,7 @@ class Home extends Component {
               <hr />
               <h3>How to remove your data from our servers?</h3>
               <p>
-                Please send an email to admin@pujarig.com from your registered email
+                Please send an email to <a href="mailto://admin@pujarig.com">admin@pujarig.com </a> from your registered email
                 address asking us to delete your data. We may still have to
                 keep some of the data due to the legal requirements.
               </p>
@@ -373,8 +373,8 @@ class Home extends Component {
                 service providers directly or indirectly associtated with pujarig.com or its services.
               </p>
               <p>
-                We keep on learning to serve you better. Please write your feedback and concerns to admin@pujarig.com or 
-                on the <a href="#contact">contact </a> form. We shall get back to you in 2 working days.
+                We keep on learning to serve you better. Please write your feedback and concerns to <a href="mailto://admin@pujarig.com">admin@pujarig.com </a> or 
+                on the <a href="#contact">contact </a> form. We shall get back to you within two working days.
               </p>
             </section>
           </div>

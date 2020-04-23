@@ -24,7 +24,7 @@ export default function BasicExample() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
           <div className="container  text-uppercase p-2">
             <Link to="/" class="navbar-brand js-scroll-trigger">
-              <img class="logo" src={process.env.PUBLIC_URL + "/img/logo1.png"} alt="PujariG" />
+              <img class="logo" src={window.location.origin + "/img/logo1.png"} alt="PujariG" />
             </Link>
             {/* <a class="navbar-brand js-scroll-trigger" href="#page-top">
               <img class="logo" src="/img/logo1.png" alt="PujariG" />
