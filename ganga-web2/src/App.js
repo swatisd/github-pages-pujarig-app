@@ -8,18 +8,26 @@ import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 
 const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
+const loginUri = "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" + getCallbackUrl();
+const logoutUri = "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt5cvvhbt&logout_uri=" + getCallbackUrl();
+
 
 // This site has 3 pages, all of which are rendered dynamically in the browser (not server rendered).
 // Although the page does not ever refresh, notice how React Router keeps the URL up to date as you navigate
 // through the site. This preserves the browser history, making sure things like the back button and bookmarks
 // work properly.
 
-export default function BasicExample() {
-  const loginUri = "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" + getCallbackUrl();
-  const logoutUri = "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt5cvvhbt&logout_uri=" + getCallbackUrl();
+// export default function BasicExample() {
+class App extends React.Component {
 
-  return (
-    <Router>
+  nextPath(path) {
+    this.props.history.push(path);
+  }
+
+  render() {
+    return (
+
+      <Router>
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
           <div className="container  text-uppercase p-2">
@@ -39,7 +47,7 @@ export default function BasicExample() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-           
+
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
@@ -50,7 +58,7 @@ export default function BasicExample() {
                     Services <span className="sr-only">(current)</span>
                   </a>
                 </li>
-                
+
                 <li className="nav-item">
                   <a className="nav-link" href="/#about">
                     About
@@ -72,12 +80,13 @@ export default function BasicExample() {
                   </a>
                 </li>
 
-                
+
                 <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
                   <li className="nav-item">
-                    <button onClick={openBookNow} className="nav-link booknow">
-                      BOOKNOW
-                  </button>
+                    <Link className="nav-link booknow" to='/booknow'>BOOKNOW</Link>
+                    {/* <button onClick={() => this.nextPath('/booknow')} className="nav-link booknow"> */}
+                      {/* BOOKNOW */}
+                  {/* </button> */}
                   </li>
                 </Animated>
               </ul>
@@ -92,8 +101,11 @@ export default function BasicExample() {
         <Route exact path="/booknow" component={Booknow} />
       </Switch>
     </Router>
-  );
+    );
+  }
 }
+
+export default App;
 
 function isProd() {
   return window.location.href.indexOf('localhost') < 0;
@@ -101,10 +113,6 @@ function isProd() {
 
 function getCallbackUrl() {
   return (isProd() ? 'https://pujarig.com' : 'http://localhost:3000');
-}
-
-function openBookNow() {
-  window.open("/booknow");
 }
 
 // You can think of these components as "pages" in your app.
