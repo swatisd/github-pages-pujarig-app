@@ -31,6 +31,22 @@ class PujariGCommon {
         }
         return data;
         }
+        
+        loginURI() {
+          return "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" +  this.getCallbackUrl();
+        }
+
+        logoutURI () {
+          return "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt5cvvhbt&logout_uri=" + this.getCallbackUrl();
+        }
+
+        isProd() {
+          return window.location.href.indexOf('localhost') < 0;
+        }
+        
+        getCallbackUrl() {
+          return (this.isProd() ? 'https://pujarig.com/booknow' : 'http://localhost:3000/booknow');
+        }
 }
 
 export default PujariGCommon;

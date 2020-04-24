@@ -1,15 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
-// import Login from "./Login";
 import { Animated } from "react-animated-css";
 import Booknow from "./Booknow";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+import PujariGCommon from "./PujariGCommon";
 
+const common = new PujariGCommon();
 const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
-const loginUri = "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" + getCallbackUrl();
-const logoutUri = "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt5cvvhbt&logout_uri=" + getCallbackUrl();
+const loginUri = common.loginURI();
+//const logoutUri = common.logoutURI();
 
 
 // This site has 3 pages, all of which are rendered dynamically in the browser (not server rendered).
@@ -20,11 +21,8 @@ const logoutUri = "https://auth.pujarig.com/logout?client_id=4f2mhs8n77ceod461gt
 // export default function BasicExample() {
 class App extends React.Component {
 
-  nextPath(path) {
-    this.props.history.push(path);
-  }
-
   render() {
+    
     return (
 
       <Router>
@@ -106,37 +104,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-function isProd() {
-  return window.location.href.indexOf('localhost') < 0;
-}
-
-function getCallbackUrl() {
-  return (isProd() ? 'https://pujarig.com' : 'http://localhost:3000');
-}
-
-// You can think of these components as "pages" in your app.
-
-// function Home() {
-//   return (
-//     <div>
-//       <h2>Home</h2>
-//     </div>
-//   );
-// }
-
-// function About() {
-//   return (
-//     <div>
-//       <h2>About</h2>
-//     </div>
-//   );
-// }
-
-// function Dashboard() {
-//   return (
-//     <div>
-//       <h2>Dashboard</h2>
-//     </div>
-//   );
-// }
