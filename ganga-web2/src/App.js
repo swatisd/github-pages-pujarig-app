@@ -81,10 +81,7 @@ class App extends React.Component {
 
                 <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
                   <li className="nav-item">
-                    <Link className="nav-link booknow" to='/booknow'>BOOKNOW</Link>
-                    {/* <button onClick={() => this.nextPath('/booknow')} className="nav-link booknow"> */}
-                      {/* BOOKNOW */}
-                  {/* </button> */}
+                    <a className="nav-link booknow" href="/booknow">BOOKNOW</a>
                   </li>
                 </Animated>
               </ul>
