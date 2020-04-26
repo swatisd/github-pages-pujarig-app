@@ -380,6 +380,29 @@ class Home extends Component {
           </div>
         </section>
 
+        <section class="bg-light page-section" id="legal">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+              <Bounce>
+                <h2 class="section-heading text-uppercase">
+                  Legal
+                  <hr class="tnc"></hr>
+                </h2>
+                </Bounce>
+              </div>
+            </div>
+            <section class="termsandconditions">
+              <h2>Impressum</h2>
+              <p>Business is registered in the name of </p>
+               <p>Ruchi Singh </p>
+              <p>Malterserstr. 87 E </p>
+              <p>12249 Berlin </p>
+              <p>IBAN: DE48 1007 0024 0087 7670 00</p>
+            </section>
+          </div>
+        </section>
+
         <section class="page-section" id="contact">
           <div class="container">
             <div class="row">
@@ -544,6 +567,9 @@ class Home extends Component {
                   </li>
                   <li class="list-inline-item">
                     <a href="#termsconditions">Terms of Use</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#legal">Impressum</a>
                   </li>
                 </ul>
               </div>
