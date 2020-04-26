@@ -105,7 +105,7 @@ class Home extends Component {
               <div className="carousel-caption d-none d-md-block slider1">
               <h2>Welcome to PujariG</h2>
               <h5>
-                Pujarig.com facilitates online puja and delivers needed supplies.
+                pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
               </div>
             </div>
@@ -114,7 +114,7 @@ class Home extends Component {
               <div className="carousel-caption d-none d-md-block slider2">
               <h2>Welcome to PujariG</h2>
                 <h5>
-                Pujarig.com facilitates online puja and delivers needed supplies.
+                pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
               </div>
             </div>
@@ -123,7 +123,7 @@ class Home extends Component {
               <div className="carousel-caption d-none d-md-block slider3">
               <h2>Welcome to PujariG</h2>
               <h5>
-                Pujarig.com facilitates online puja and delivers needed supplies.
+                pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
               </div>
             </div>
@@ -165,7 +165,7 @@ class Home extends Component {
                 </h2>
                 </Bounce>
                 <h3 class="section-subheading text-muted">
-                  Pujarig.com facilitates online puja and delivers needed
+                  pujarig.com facilitates online puja and delivers needed
                   supplies.
                 </h3>
               </div>
@@ -196,10 +196,9 @@ class Home extends Component {
                 
                 <h4 class="service-heading">Mundan</h4>
               </div>
-            </div>
+            </div>             
           </div>
         </section>
-        
         <section class="page-section" id="about">
           <div class="container">
             <div class="row">
@@ -254,7 +253,7 @@ class Home extends Component {
                       </div>
                       <div class="timeline-body">
                         <p class="text-muted">
-                          To benefit others like us, pujarig.com was incepted. We onboard qualified PujariGs who are available on
+                          To benefit others like us, pujarig.com was incepted. We onboarded qualified PujariGs who are available on
                           various online channels across different timezones.
                         </p>
                       </div>
