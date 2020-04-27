@@ -154,105 +154,106 @@ class Home extends Component {
           </a>
         </div>
 
-        <section class="page-section" id="services">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="page-section" id="services">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <Bounce>
-                <h2 class="section-heading text-uppercase">
+                <h2 className="section-heading text-uppercase">
                   Featured Pooja Categories
-                  <hr class="fpc"></hr>
+                  <hr className="fpc"></hr>
                 </h2>
                 </Bounce>
-                <h3 class="section-subheading text-muted">
+                <h3 className="section-subheading text-muted">
                   pujarig.com facilitates online puja and delivers needed
                   supplies.
                 </h3>
               </div>
             </div>
-            <div class="row text-center animated bounce">
+            <div className="row text-center animated bounce">
             
-              <div class="col-md-4 showbox ">
+              <div className="col-md-4 showbox ">
               
                 <img
-                  class="img-fluid  "
+                  className="img-fluid  "
                   src={window.location.origin+"/img/one.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
                
-                <h4 class="service-heading">Satyanarayan Vrat Katha</h4>
+                <h4 className="service-heading">Satyanarayan Vrat Katha</h4>
               </div>
-              <div class="col-md-4 showbox">
+              <div className="col-md-4 showbox">
                 <img
-                  class="img-fluid "
+                  className="img-fluid "
                   src={window.location.origin+"/img/two.jpg"}
                   alt="Satyanarayan Vrat Katha"
                 />
-                <h4 class="service-heading ">Grih Parvesh</h4>
+                <h4 className="service-heading ">Grih Parvesh</h4>
               </div>
-              <div class="col-md-4 showbox ">
+              <div className="col-md-4 showbox ">
               
-                <img class="img-fluid" src={window.location.origin+"/img/mundan.jpg"} alt="Mundan" />
+                <img className="img-fluid" src={window.location.origin+"/img/mundan.jpg"} alt="Mundan" />
                 
-                <h4 class="service-heading">Mundan</h4>
+                <h4 className="service-heading">Mundan</h4>
               </div>
             </div>             
           </div>
         </section>
-        <section class="page-section" id="about">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="page-section" id="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <Bounce>
-                <h2 class="section-heading text-uppercase">About Us
-                <hr class="abtus"></hr></h2>
+                <h2 className="section-heading text-uppercase">About Us
+                <hr className="abtus"></hr></h2>
                 </Bounce>
-                <h3 class="section-subheading text-muted">
+                <h3 className="section-subheading text-muted">
                   How it all started.
                 </h3>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul class="timeline">
+            <div className="row">
+              <div className="col-lg-12">
+                <ul className="timeline">
                   <li>
-                    <div class="timeline-image">
+                    <div className="timeline-image">
                       <img
-                        class="rounded-circle img-fluid"
+                        className="rounded-circle img-fluid"
                         src={window.location.origin+"/img/1.jpg"}
                         alt=""
                       />
                     </div>
-                    <div class="timeline-panel">
-                      <div class="timeline-heading">
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
                         <h4>2016-2017</h4>
-                        <h4 class="subheading">A challange was encountered</h4>
+                        <h4 className="subheading">A challange was encountered</h4>
                       </div>
-                      <div class="timeline-body">
-                        <p class="text-muted">
+                      <div className="timeline-body">
+                        <p className="text-muted">
                           We wanted to have puja rituals for Grih Pravesh according to the north
                           Indian traditions. But we could not find a pandit ji in Berlin. Our family pandit ji
                           came online to give us the directions to perform the rituals rightly.
-                          <p>It was a huge satisfaction as an expat!</p>
+                          
                         </p>
+                        <p className="text-muted">It was a huge satisfaction as an expat!</p>
                       </div>
                     </div>
                   </li>
-                  <li class="timeline-inverted">
-                    <div class="timeline-image">
+                  <li className="timeline-inverted">
+                    <div className="timeline-image">
                       <img
-                        class="rounded-circle img-fluid"
+                        className="rounded-circle img-fluid"
                         src={window.location.origin+"/img/risingsun.png"}
                         alt=""
                       />
                     </div>
-                    <div class="timeline-panel">
-                      <div class="timeline-heading">
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
                         <h4>2018</h4>
-                        <h4 class="subheading">A concept was created</h4>
+                        <h4 className="subheading">A concept was created</h4>
                       </div>
-                      <div class="timeline-body">
-                        <p class="text-muted">
+                      <div className="timeline-body">
+                        <p className="text-muted">
                           To benefit others like us, pujarig.com was incepted. We onboarded qualified PujariGs who are available on
                           various online channels across different timezones.
                         </p>
@@ -260,47 +261,47 @@ class Home extends Component {
                     </div>
                   </li>
                   <li>
-                    <div class="timeline-image">
+                    <div className="timeline-image">
                       <img
-                        class="rounded-circle img-fluid"
+                        className="rounded-circle img-fluid"
                         src={window.location.origin+"/img/2.jpg"}
                         alt=""
                       />
                     </div>
-                    <div class="timeline-panel">
-                      <div class="timeline-heading">
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
                         <h4>2019</h4>
-                        <h4 class="subheading">Transition to full service</h4>
+                        <h4 className="subheading">Transition to full service</h4>
                       </div>
-                      <div class="timeline-body">
-                        <p class="text-muted">
+                      <div className="timeline-body">
+                        <p className="text-muted">
                           To give you worry free experience, pujarig.com send you the ingredients needed for the rituals at a nominal cost. You only pay 
                           the cost of ingredients to us. Dakshina (honorary) is paid to the PujariG in a transparent manner.
                         </p>
                       </div>
                     </div>
                   </li>
-                  <li class="timeline-inverted">
-                    <div class="timeline-image">
+                  <li className="timeline-inverted">
+                    <div className="timeline-image">
                       <img
-                        class="rounded-circle img-fluid"
+                        className="rounded-circle img-fluid"
                         src={window.location.origin+"/img/4n.jpg"}
                         alt=""
                       />
                     </div>
-                    <div class="timeline-panel">
-                      <div class="timeline-heading">
-                        <h4 class="subheading">For more info &amp; queries</h4>
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
+                        <h4 className="subheading">For more info &amp; queries</h4>
                       </div>
-                      <div class="timeline-body">
-                        <p class="text-muted">
+                      <div className="timeline-body">
+                        <p className="text-muted">
                           You can always write to <a href="mailto://admin@pujarig.com">admin@pujarig.com </a> !
                         </p>
                       </div>
                     </div>
                   </li>
-                  <li class="timeline-inverted">
-                    <div class="timeline-image">
+                  <li className="timeline-inverted">
+                    <div className="timeline-image">
                       <h4>
                         Be Part
                         <br />
@@ -316,23 +317,23 @@ class Home extends Component {
           </div>
         </section>
 
-        <section class="bg-light page-section" id="termsconditions">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="bg-light page-section" id="termsconditions">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <Bounce>
-                <h2 class="section-heading text-uppercase">
+                <h2 className="section-heading text-uppercase">
                   Terms &amp; Conditions
-                  <hr class="tnc"></hr>
+                  <hr className="tnc"></hr>
                 </h2>
                 </Bounce>
-                <h3 class="section-subheading text-muted">
+                <h3 className="section-subheading text-muted">
                   You agree to the below terms and conditions by login into
                   pujarig.com or by using one of its services.
                 </h3>
               </div>
             </div>
-            <section class="termsandconditions">
+            <section className="termsandconditions">
               <h2>Privacy Policy</h2>
               <h3>What personal data do we store?</h3>
               <p>
@@ -379,19 +380,19 @@ class Home extends Component {
           </div>
         </section>
 
-        <section class="bg-light page-section" id="legal">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="bg-light page-section" id="legal">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <Bounce>
-                <h2 class="section-heading text-uppercase">
+                <h2 className="section-heading text-uppercase">
                   Legal
-                  <hr class="tnc"></hr>
+                  <hr className="tnc"></hr>
                 </h2>
                 </Bounce>
               </div>
             </div>
-            <section class="termsandconditions">
+            <section className="termsandconditions">
               <h2>Impressum</h2>
               <p>Business is registered in the name of </p>
                <p>Ruchi Singh </p>
@@ -402,33 +403,33 @@ class Home extends Component {
           </div>
         </section>
 
-        <section class="page-section" id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="page-section" id="contact">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <div>
               <Bounce>
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <hr class="cnctus"></hr>
+                <h2 className="section-heading text-uppercase">Contact Us</h2>
+                <hr className="cnctus"></hr>
                 </Bounce>
-                <h3 class="section-subheading text-muted contactu">
+                <h3 className="section-subheading text-muted contactu">
                   You can always write to Us for any queries.
                 </h3>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12">
+            <div className="row">
+              <div className="col-lg-12">
                 <form onSubmit={this.handleSubmit}
                   id="contactForm"
                   name="sentMessage"
-                  novalidate="novalidate"
+                  noValidate="novalidate"
                 >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="name"
                           type="text"
                           placeholder="Your Name *"
@@ -437,11 +438,11 @@ class Home extends Component {
                           onChange={this.handleInputChange}
                           value={this.state.name}
                         />
-                        <p class="help-block text-danger"></p>
+                        <p className="help-block text-danger"></p>
                       </div>
-                      <div class="form-group">
+                      <div className="form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           type="email"
                           placeholder="Your Email *"
@@ -450,11 +451,11 @@ class Home extends Component {
                           onChange={this.handleInputChange}
                           value={this.state.email}
                         />
-                        <p class="help-block text-danger"></p>
+                        <p className="help-block text-danger"></p>
                       </div>
-                      <div class="form-group">
+                      <div className="form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="phone"
                           type="tel"
                           placeholder="Your Phone *"
@@ -463,13 +464,13 @@ class Home extends Component {
                           onChange={this.handleInputChange}
                           value={this.state.phone}
                         />
-                        <p class="help-block text-danger"></p>
+                        <p className="help-block text-danger"></p>
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
+                    <div className="col-md-6">
+                      <div className="form-group">
                         <textarea
-                          class="form-control"
+                          className="form-control"
                           id="message"
                           placeholder="Your Message *"
                           required=""
@@ -477,20 +478,20 @@ class Home extends Component {
                           onChange={this.handleInputChange}
                           value={this.state.message}
                         ></textarea>
-                        <p class="help-block text-danger"></p>
+                        <p className="help-block text-danger"></p>
                       </div>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="col-lg-12 text-center">
+                    <div className="clearfix"></div>
+                    <div className="col-lg-12 text-center">
                       <div id="success"></div>
                       <button
                         id="sendMessageButton "
-                        class="btn btn-primary btn-xl text-uppercase"
+                        className="btn btn-primary btn-xl text-uppercase"
                         type="submit"
                       >
                         Send Message
                       </button>
-                      <small hidden={this.state.queryButtonHidden} id="submitHelp" class="form-text  error-msg">
+                      <small hidden={this.state.queryButtonHidden} id="submitHelp" className="form-text  error-msg">
                         {this.state.submitButtonText}
                       </small>
                     </div>
@@ -501,28 +502,28 @@ class Home extends Component {
           </div>
         </section>
 
-        <section class="page-section" id="location">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 text-center">
+        <section className="page-section" id="location">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
               <Bounce>
-                <h2 class="section-heading text-uppercase location">
+                <h2 className="section-heading text-uppercase location">
                   Our Locations
-                  <hr class="lctn"></hr>
+                  <hr className="lctn"></hr>
                 </h2>
                 </Bounce>
-                <h3 class="section-subheading text-muted"></h3>
+                <h3 className="section-subheading text-muted"></h3>
               </div>
             </div>
-            <section class="links">
-              <div class="row">
-                <section class="address">
+            <section className="links">
+              <div className="row">
+                <section className="address">
                   <h3>Germany</h3>
                   <p>Malteserstr 87 E</p>
                   <p>12249 Berlin</p>
                   <p>Phone: +49 (030) 68001477</p>
                 </section>
-                <section class="address">
+                <section className="address">
                   <h3>India</h3>
                   <p>3, Patel Nagar ext.Near Sector 9</p>
                   <p>Indira Nagar, Lucknow, UP</p>
@@ -534,40 +535,40 @@ class Home extends Component {
           </div>
         </section>
 
-        <footer class="footer">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <span class="copyright">Copyright © PujariG 2019</span>
+        <footer className="footer">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-4">
+                <span className="copyright">Copyright © PujariG 2019</span>
               </div>
-              <div class="col-md-4">
-                <ul class="list-inline social-buttons">
-                  <li class="list-inline-item">
+              <div className="col-md-4">
+                <ul className="list-inline social-buttons">
+                  <li className="list-inline-item">
                     <a href="https://twitter.com/pujarigdotcom">
-                      <i class="fa fa-twitter"></i>
+                      <i className="fa fa-twitter"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="https://www.facebook.com/pujarig.online/">
-                      <i class="fa fa-facebook"></i>
+                      <i className="fa fa-facebook"></i>
                     </a>
                   </li>
-                  <li class="list-inline-item instagram">
+                  <li className="list-inline-item instagram">
                     <a href="#">
-                      <i class="fa fa-instagram"></i>
+                      <i className="fa fa-instagram"></i>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <ul class="list-inline quicklinks">
-                  <li class="list-inline-item">
+              <div className="col-md-4">
+                <ul className="list-inline quicklinks">
+                  <li className="list-inline-item">
                     <a href="#contact">Contact @</a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="#termsconditions">Terms of Use</a>
                   </li>
-                  <li class="list-inline-item">
+                  <li className="list-inline-item">
                     <a href="#legal">Impressum</a>
                   </li>
                 </ul>

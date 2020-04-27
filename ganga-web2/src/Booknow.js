@@ -188,7 +188,7 @@ class Booknow extends Component {
       <div>   
         <div className="container">
         
-          <form onSubmit={this.handleSubmit} class="book">
+          <form onSubmit={this.handleSubmit} className="book">
           {/* <Sky
           images={{
           //  FORMAT AS FOLLOWS
@@ -203,7 +203,7 @@ class Booknow extends Component {
           />  */}
         
             <div className="form-group">
-              <label for="datepicker-input">Date and Time<sup>*</sup></label>
+              <label >Date and Time<sup>*</sup></label>
               <DatePicker className="datepicker" id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}
                 showPopperArrow={false}
                 showTimeSelect
@@ -214,13 +214,13 @@ class Booknow extends Component {
                 placeholderText="Select Schedule Date"
                 minDate={this.addDays(new Date(), 7)}
               />
-              <small hidden={!this.state.validationErrors.datetime} id="datetimeHelp" class="form-text error-msg">
+              <small hidden={!this.state.validationErrors.datetime} id="datetimeHelp" className="form-text error-msg">
                 Select date and time.
               </small>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Ceremony<sup>*</sup></label>
-              <select class="form-control preq-pname" id="ceremony" onChange={this.handleInputChange} value={this.state.ceremony}>
+            <div className="form-group">
+              <label >Ceremony<sup>*</sup></label>
+              <select className="form-control preq-pname" id="ceremony" onChange={this.handleInputChange} value={this.state.ceremony}>
                 <option value="">Choose one</option>
                 <option value="satyanarayan">Satyanarayan Vrat Katha</option>
                 <option value="grihPravesh">Grih Pravesh</option>
@@ -230,57 +230,57 @@ class Booknow extends Component {
                 <option value="rudrabhishek">Rudrabhishek</option>
                 <option value="other">Other</option>
               </select>
-              <small hidden={!this.state.validationErrors.ceremony} id="ceremonyeHelp" class="form-text error-msg">
+              <small hidden={!this.state.validationErrors.ceremony} id="ceremonyeHelp" className="form-text error-msg">
                 Ceremony should not be left blank.
               </small>
             </div>
-            <div class="form-group">
-              <label for="mobile" >Mobile Number<sup>*</sup></label>
-              <input type="tel" class="form-control" id="mobile" aria-describedby="numberhelp" placeholder="Example: +49 151 234567"
+            <div className="form-group">
+              <label >Mobile Number<sup>*</sup></label>
+              <input type="tel" className="form-control" id="mobile" aria-describedby="numberhelp" placeholder="Example: +49 151 234567"
                 onChange={(event) => this.handleInputChange(event)} value={this.state.mobile}
               />
-              <small hidden={!this.state.validationErrors.mobile} id="mobileHelp" class="form-text error-msg">
+              <small hidden={!this.state.validationErrors.mobile} id="mobileHelp" className="form-text error-msg">
                 Enter a valid mobile number.
               </small>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="city">City<sup>*</sup></label>
-                <input type="text" class="form-control" id="city" onChange={this.handleInputChange} placeholder="Enter City" value={this.state.city}/>
-                <small hidden={!this.state.validationErrors.city} id="cityHelp" class="form-text error-msg">
+            <div className="form-row">
+              <div className="form-group col-md-6">
+                <label >City<sup>*</sup></label>
+                <input type="text" className="form-control" id="city" onChange={this.handleInputChange} placeholder="Enter City" value={this.state.city}/>
+                <small hidden={!this.state.validationErrors.city} id="cityHelp" className="form-text error-msg">
                   Enter a valid city name.
               </small>
               </div>
-              <div class="form-group col-md-6">
-                <label for="state">State</label>
-                <input type="text" class="form-control" onChange={this.handleInputChange} id="state" placeholder="Enter State" value={this.state.state}/>
+              <div className="form-group col-md-6">
+                <label >State</label>
+                <input type="text" className="form-control" onChange={this.handleInputChange} id="state" placeholder="Enter State" value={this.state.state}/>
               </div>
-              <div class="form-group col-md-6">
-                <label for="country">Country<sup>*</sup></label>
-                <input type="text" class="form-control" id="country" onChange={this.handleInputChange} placeholder="Enter Country" value={this.state.country}/>
-                <small hidden={!this.state.validationErrors.country} id="countryHelp" class="form-text error-msg">
+              <div className="form-group col-md-6">
+                <label >Country<sup>*</sup></label>
+                <input type="text" className="form-control" id="country" onChange={this.handleInputChange} placeholder="Enter Country" value={this.state.country}/>
+                <small hidden={!this.state.validationErrors.country} id="countryHelp" className="form-text error-msg">
                   Enter a valid country name.
               </small>
               </div>
 
-              <div class="form-group col-md-6">
-                <label for="postcode">Post Code<sup>*</sup></label>
-                <input type="text" class="form-control" id="postcode" onChange={this.handleInputChange} placeholder="Enter Post Code" value={this.state.postcode}/>
-                <small hidden={!this.state.validationErrors.postcode} id="postcodeHelp" class="form-text  error-msg">
+              <div className="form-group col-md-6">
+                <label >Post Code<sup>*</sup></label>
+                <input type="text" className="form-control" id="postcode" onChange={this.handleInputChange} placeholder="Enter Post Code" value={this.state.postcode}/>
+                <small hidden={!this.state.validationErrors.postcode} id="postcodeHelp" className="form-text  error-msg">
                   Enter a valid postcode.
               </small>
               </div>
 
             </div>
-            <div class="form-group">
-              <label for="customerNeedsNComments">Special Needs / Questions about Puja</label>
-              <textarea class="form-control" rows="3" name="customerNeedsNComments" id="customerNeedsNComments" cols="50" onChange={this.handleInputChange} placeholder="eg: I need puja to be performed according to the north Indian traditions. I would like to know puja the samagri and duration." value={this.state.customerNeedsNComments}></textarea>
+            <div className="form-group">
+              <label >Special Needs / Questions about Puja</label>
+              <textarea className="form-control" rows="3" name="customerNeedsNComments" id="customerNeedsNComments" cols="50" onChange={this.handleInputChange} placeholder="eg: I need puja to be performed according to the north Indian traditions. I would like to know puja the samagri and duration." value={this.state.customerNeedsNComments}></textarea>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">By clicking 'Submit' button, you agree to the <a class="booktc" href="termsconditions"> Terms and Conditions</a></label>
-              <button disabled={!this.state.okToSend} id="submit" class="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button>
-              {/* <button onSubmit={this.onSubmit} id="submit" class="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button> */}
-              <small hidden={this.state.okToSend} id="submitHelp" class="form-text  error-msg">
+            <div className="form-group">
+              <label >By clicking 'Submit' button, you agree to the <a className="booktc" href="/#termsconditions"> Terms and Conditions</a></label>
+              <button disabled={!this.state.okToSend} id="submit" className="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button>
+              {/* <button onSubmit={this.onSubmit} id="submit" className="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button> */}
+              <small hidden={this.state.okToSend} id="submitHelp" className="form-text  error-msg">
                 {this.state.submitButtonText}
               </small>
             </div>

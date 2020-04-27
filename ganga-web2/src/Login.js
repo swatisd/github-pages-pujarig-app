@@ -3,16 +3,16 @@ import React, { Component } from "react";
 class Login extends Component {
   render() {
     return (
-      <div class="container">
+      <div className="container">
       
         
-        <div class="row">
-  <div class="col-6">
-  <form class="form-signin book">
+        <div className="row">
+  <div className="col-6">
+  <form className="form-signin book">
           
           <input
             type="text"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="username"
             placeholder="Email Address"
             required=""
@@ -20,12 +20,12 @@ class Login extends Component {
           />
           <input
             type="password"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="password"
             placeholder="Password"
             required=""
           />
-          <label class="checkbox mb-4">
+          <label className="checkbox mb-4">
             <input
               type="checkbox"
               value="remember-me"
@@ -34,15 +34,15 @@ class Login extends Component {
             />{" "}
             Remember me
           </label>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">
+          <button className="btn btn-lg btn-primary btn-block" type="submit">
             Sign In
           </button>
         </form></div>
-  <div class="col-6"> <form class="form-signin book">
+  <div className="col-6"> <form className="form-signin book">
           
           <input
             type="text"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="name"
             placeholder="Name"
             required="true"
@@ -50,7 +50,7 @@ class Login extends Component {
           />
           <input
             type="email"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="email"
             placeholder="Email Address"
             required="true"
@@ -58,7 +58,7 @@ class Login extends Component {
           />
           <input
             type="text"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="Family Name"
             placeholder="Family Name"
             required="true"
@@ -66,12 +66,12 @@ class Login extends Component {
           />
           <input
             type="password"
-            class="form-control mb-2"
+            className="form-control mb-2"
             name="password"
             placeholder="Password"
             required="true"
           />
-          <label class="checkbox mb-4">
+          <label className="checkbox mb-4">
             <input
               type="checkbox"
               value="remember-me"
@@ -80,7 +80,7 @@ class Login extends Component {
             />{" "}
             Remember me
           </label>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">
+          <button className="btn btn-lg btn-primary btn-block" type="submit">
             Sign Up
           </button>
         </form></div>

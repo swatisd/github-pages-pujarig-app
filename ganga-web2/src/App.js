@@ -6,6 +6,7 @@ import Booknow from "./Booknow";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 
 const common = new PujariGCommon();
 const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
@@ -26,74 +27,54 @@ class App extends React.Component {
     return (
 
       <Router>
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-          <div className="container  text-uppercase p-2">
-            <Link to="/" class="navbar-brand js-scroll-trigger">
-              <img class="logo" src={window.location.origin + "/img/logo1.png"} alt="PujariG" />
+      
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" id="mainNav">
+        <div className="container" >    
+        <Link to="/" className="navbar-brand js-scroll-trigger ">
+              <img className="logo" src={window.location.origin + "/img/logo1.png"} alt="pujarig.com" />
             </Link>
-            {/* <a class="navbar-brand js-scroll-trigger" href="#page-top">
-              <img class="logo" src="/img/logo1.png" alt="PujariG" />
-            </a> */}
-            <button className="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+          <div className="container  text-uppercase p-2">
+            
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="/#services">
+                  <Nav.Link className="nav-link" href="/#services">
                     Services <span className="sr-only">(current)</span>
-                  </a>
+                  </Nav.Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="/#about">
+                  <Nav.Link className="nav-link" href="/#about">
                     About
-                  </a>
+                  </Nav.Link>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Contact
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/#termsconditions">Terms & Conditions</a>
-                    <a class="dropdown-item" href="/#contact">Get In Touch</a>
-
-                  </div>
+                <li className="nav-item dropdown">
+               
+                  <NavDropdown title="Contact" id="navbarDropdown" >
+                    <NavDropdown.Item  href="/#termsconditions">Terms & Conditions</NavDropdown.Item>
+                    <NavDropdown.Item  href="/#contact">Get In Touch</NavDropdown.Item>
+                  </NavDropdown>
+                  
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href={loginUri}>
+                  <Nav.Link className="nav-link" href={loginUri}>
                     Login
-                  </a>
+                  </Nav.Link>
                 </li>
-
-
                 <Animated animationIn="bounceInDown" animationOut="fadeOut" isVisible={true}>
                   <li className="nav-item">
-                    <a className="nav-link booknow" href="/booknow">BOOKNOW</a>
+                    <Nav.Link className="nav-link booknow" href="/booknow">BOOKNOW</Nav.Link>
                   </li>
                 </Animated>
               </ul>
-            </div>
           </div>
-        </nav>
-      </div>
+        </Navbar.Collapse>
+        </div>
+        </Navbar>
       <Switch>
-        <Route exact path="/" component={Home} />
-        {/* <Route exact path="/login" component={Login} /> */}
-
         <Route exact path="/booknow" component={Booknow} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </Router>
     );
