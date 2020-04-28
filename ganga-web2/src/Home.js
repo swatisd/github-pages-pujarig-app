@@ -199,6 +199,54 @@ class Home extends Component {
             </div>             
           </div>
         </section>
+
+        <section className="page-section panditG" id="services">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+              <Bounce>
+                <h2 className="section-heading text-uppercase">
+                  Featured PujariG
+                  <hr className="fpc"></hr>
+                </h2>
+                </Bounce>
+                <h3 className="section-subheading text-muted">
+                  pujarig.com facilitates online puja and delivers needed
+                  supplies.
+                </h3>
+              </div>
+            </div>
+            <div className="row text-center animated bounce">
+            
+              <div className="col-md-4   ">
+              
+                <img
+                  className="img-fluid  "
+                  src={window.location.origin+"/img/pandit1.png"}
+                  alt="Satyanarayan Vrat Katha"
+                />
+               
+                <h4 className="service-heading effect1">Pandit_one</h4>
+              </div>
+              <div className="col-md-4 ">
+                <img
+                  className="img-fluid "
+                  src={window.location.origin+"/img/pandit1.png"}
+                  alt="Satyanarayan Vrat Katha"
+                />
+                <h4 className="service-heading effect1">Pandit_two</h4>
+              </div>
+              <div className="col-md-4  ">
+              
+                <img className="img-fluid" src={window.location.origin+"/img/pandit1.png  "} alt="Mundan" />
+                
+                <h4 className="service-heading effect1">Pandit_three</h4>
+              </div>
+            </div>             
+          </div>
+        </section>       
+        
+
         <section className="page-section" id="about">
           <div className="container">
             <div className="row">

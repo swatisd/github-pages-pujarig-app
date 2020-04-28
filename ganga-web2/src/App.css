@@ -621,3 +621,25 @@ color: #fff;
         width: 25%;
         border-top: 1px solid #fff;
       }
+
+      .panditG img {
+        
+        border: 5px solid hsl(0, 0%, 40%);
+        border-radius: 25px;
+        padding: 5px;
+        outline: 5px solid hsl(0, 0%, 60%);
+        box-shadow:
+            0 0 0 10px hsl(0, 0%, 50%),
+            0 0 0 15px hsl(0, 0%, 50%);
+        
+        border-radius: 5px ;  
+        width: 65% !important;   
+        
+      }
+      .effect1{
+        -webkit-box-shadow: 0 10px 6px -6px #777;
+           -moz-box-shadow: 0 10px 6px -6px #777;
+                box-shadow: 0 10px 6px -6px #777;
+                padding: 10px;
+    }
+    
