@@ -624,13 +624,13 @@ color: #fff;
 
       .panditG img {
         
-        border: 5px solid hsl(0, 0%, 40%);
+        border: 5px solid #e9ecef (0, 0%, 40%);
         border-radius: 25px;
         padding: 5px;
-        outline: 5px solid hsl(0, 0%, 60%);
+        outline: 5px solid #e9ecef (0, 0%, 60%);
         box-shadow:
-            0 0 0 10px hsl(0, 0%, 50%),
-            0 0 0 15px hsl(0, 0%, 50%);
+            0 0 0 10px #e9ecef (0, 0%, 50%),
+            0 0 0 15px #e9ecef (0, 0%, 50%);
         
         border-radius: 5px ;  
         width: 65% !important;   
@@ -642,4 +642,42 @@ color: #fff;
                 box-shadow: 0 10px 6px -6px #777;
                 padding: 10px;
     }
-    
+
+    .team .member {
+      text-align: center;
+      margin-bottom: 80px;
+      position: relative;
+  }
+  .team .member .pic {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.team .member .member-info {
+  position: absolute;
+  bottom: -48px;
+  left: 20px;
+  right: 20px;
+  background: linear-gradient(#6c757d, #212529);
+  border-radius: 4px;
+  color: #fff;
+  text-shadow: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.team {
+  background: #fff;
+  padding: 60px 0 30px 0;
+}
+.team .member .social {
+  margin-top: 15px;}
+  .team .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+}
+.member-info h5 {
+ 
+  font: 1.1em sans-serif;
+}
+.member-info span {
+  font-size: 14px;
+}

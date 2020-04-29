@@ -221,7 +221,7 @@ class Home extends Component {
               <div className="col-md-4   ">
               
                 <img
-                  className="img-fluid  "
+                  className="img-fluid  img-thumbnail"
                   src={window.location.origin+"/img/pandit1.png"}
                   alt="Satyanarayan Vrat Katha"
                 />
@@ -230,7 +230,7 @@ class Home extends Component {
               </div>
               <div className="col-md-4 ">
                 <img
-                  className="img-fluid "
+                  className="img-fluid img-thumbnail"
                   src={window.location.origin+"/img/pandit1.png"}
                   alt="Satyanarayan Vrat Katha"
                 />
@@ -238,7 +238,7 @@ class Home extends Component {
               </div>
               <div className="col-md-4  ">
               
-                <img className="img-fluid" src={window.location.origin+"/img/pandit1.png  "} alt="Mundan" />
+                <img className="img-fluid img-thumbnail" src={window.location.origin+"/img/pandit1.png  "} alt="Mundan" />
                 
                 <h4 className="service-heading effect1">Pandit_three</h4>
               </div>
@@ -362,6 +362,69 @@ class Home extends Component {
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="page-section team" id="about">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+              <Bounce>
+                <h2 className="section-heading text-uppercase">Team
+                <hr className="abtus"></hr></h2>
+                </Bounce>
+                <h3 className="section-subheading text-muted">
+                  How it all started.
+                </h3>
+              </div>
+            </div>
+            <div class="row team_row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up">
+            <div class="member">
+              <div class="pic"><img src={window.location.origin+"/img/2.jpg"} class="img-fluid" alt=""/></div>
+              <div class="member-info">
+                <h5>Manish Singh</h5>
+                <span>Chief Executive Officer</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src={window.location.origin+"/img/2.jpg"} class="img-fluid" alt=""/></div>
+              <div class="member-info">
+                <h5>Name_2</h5>
+                <span>Product Manager</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src={window.location.origin+"/img/2.jpg"} class="img-fluid" alt=""/></div>
+              <div class="member-info">
+                <h5>Name_3</h5>
+                <span>CTO</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src={window.location.origin+"/img/2.jpg"} class="img-fluid" alt=""/></div>
+              <div class="member-info">
+                <h5>Name_4</h5>
+                <span>Accountant</span>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
           </div>
         </section>
 
