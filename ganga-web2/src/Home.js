@@ -165,7 +165,7 @@ class Home extends Component {
                 </h2>
                 </Bounce>
                 <h3 className="section-subheading text-muted">
-                  pujarig.com facilitates online puja and delivers needed
+                  PujariG.com facilitates online puja and delivers needed
                   supplies.
                 </h3>
               </div>
@@ -225,7 +225,8 @@ class Home extends Component {
                   alt="Vimal Tripathi"
                 />
                
-                <h4 className="service-heading effect1">P. Vimal Tripathi Ji, Lucknow</h4>
+                <h5 className="service-heading effect1">P. Vimal Tripathi Ji</h5>
+                <h6>Lucknow</h6>
               </div>
               <div className="col-md-4 ">
                 <img
@@ -233,13 +234,13 @@ class Home extends Component {
                   src={window.location.origin+"/img/UmakantSharma.jpeg"}
                   alt="Umakant Sharma"
                 />
-                <h4 className="service-heading effect1">P. Umakant Sharma Ji, Bhopal</h4>
+                <h5 className="service-heading effect1">P. Umakant Sharma Ji</h5> <h6>Bhopal</h6>
               </div>
               <div className="col-md-4  ">
               
                 <img className="img-fluid" src={window.location.origin+"/img/DwarikaPrasadGautam.jpeg"} alt="P. Gautam" />
                 
-                <h4 className="service-heading effect1">P. Dwarika Prasad Gautam Ji, Jhansi</h4>
+                <h5 className="service-heading effect1">P. Dwarika Prasad Gautam Ji</h5><h6> Jhansi</h6>
               </div>
             </div>             
           </div>
@@ -380,10 +381,10 @@ class Home extends Component {
 
           <div class="col-xl-3 col-lg-4 col-md-6 aos-init aos-animate" data-aos="fade-up">
             <div class="member">
-              <div class="pic"><img src={window.location.origin+"/img/ManishSingh.jpeg"} class="img-fluid" alt=""/></div>
+              <div class="pic"><img src={window.location.origin+"/img/ManishSingh.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Manish Pratap Singh</h5>
-                <span><p>Technology & Operations</p>Founder pujarig.com Berlin & Lucknow</span>
+                <span><p class="member_role">Technology & Operations</p>Founder PujariG.com, Berlin & Lucknow</span>
                 
               </div>
             </div>
@@ -394,7 +395,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/vineet.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Vineet Dwivedi </h5>
-                <span><p>Advisor</p>CEO flipclass.com, hiresure.ai  Bangaluru</span>
+                <span><p class="member_role">Advisor</p>CEO Flipclass.com, Hiresure.ai  Bangaluru</span>
                 
               </div>
             </div>
@@ -405,7 +406,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/mp.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Mahendra Pratap</h5>
-                <span><p>UX Incubator</p> CEO Shiksha Infotech Incubation Centre Bangaluru</span>
+                <span><p class="member_role">UX Incubator</p> CEO Shiksha Infotech Incubation Centre, Bangaluru</span>
                 
               </div>
             </div>
@@ -416,7 +417,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/sankum.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Sanjeev Mishra</h5>
-                <span><p>Digital Marketing Strategy</p>Director Navyug Infosolutions, Noida</span>
+                <span><p class="member_role">Digital Marketing Strategy</p>Director Navyug Infosolutions, Noida</span>
                 
               </div>
             </div>
@@ -515,19 +516,18 @@ class Home extends Component {
         <section className="page-section" id="contact">
           <div className="container">
             <div className="row">
-              <div className="col-lg-12 text-center">
-              <div>
-              <Bounce>
-              <h2 className="section-subheading text-warning ">
+            <div className="col-lg-12 text-center">
+             
+                <h3 className="section-heading text-uppercase">
                 Want to know more about pujarig.com and how it works?
-              </h2>
-              <h2 className="section-subheading text-warning ">
+
+                  <hr className="fpc"></hr>
+                </h3>
+              <div class="background_strip">
+                <h3 className="section-subheading ">
                 Just fill in the form below!
-              </h2>
-                {/* <h2 className="section-heading text-uppercase">Contact Us</h2>*/}
-                <hr className="cnctus"></hr> 
-                </Bounce>
-               
+
+                </h3>
                 </div>
               </div>
             </div>

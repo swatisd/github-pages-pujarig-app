@@ -33,7 +33,7 @@ class App extends React.Component {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" id="mainNav">
         <div className="container" >    
         <Link to="/" className="navbar-brand js-scroll-trigger ">
-              <img className="logo" src={window.location.origin + "/img/logo_v4.png"} alt="pujarig.com" />
+              <img className="logo" src={window.location.origin + "/img/logo.png"} alt="pujarig.com" />
             </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

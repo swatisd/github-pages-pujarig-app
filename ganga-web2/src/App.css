@@ -681,3 +681,26 @@ color: #fff;
 .member-info span {
   font-size: 14px;
 }
+.panditG h5 {
+  font-style: italic !important;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 800;
+}
+.team .member .pic img {
+  border-radius: 10px !important;
+}
+.member_role {
+  font-style: italic !important;
+  
+}
+.background_strip {
+  background-color: #fff;
+  opacity: .8;
+  border-radius: 15px;
+ 
+}
+.background_strip h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #000000 !important;
+}
