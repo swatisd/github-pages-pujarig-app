@@ -682,6 +682,9 @@ class Home extends Component {
                   <li className="list-inline-item">
                     <a href="#legal">Impressum</a>
                   </li>
+                  <li className="list-inline-item">
+                    <a href="#sitemap">Sitemap</a>
+                  </li>
                 </ul>
               </div>
             </div>
