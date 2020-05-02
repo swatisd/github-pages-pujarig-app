@@ -95,7 +95,7 @@ class Home extends Component {
       <div>
         <div
           id="carouselExampleCaptions"
-          className="carousel slide"
+          className="carousel slide d-none d-md-block"
           data-ride="carousel"
         >
          
