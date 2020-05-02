@@ -165,7 +165,7 @@ class Home extends Component {
                 </h2>
                 </Bounce>
                 <h3 className="section-subheading text-muted">
-                  PujariG.com facilitates online puja and delivers needed
+                  pujarig.com facilitates online puja and delivers needed
                   supplies.
                 </h3>
               </div>
@@ -384,7 +384,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/ManishSingh.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Manish Pratap Singh</h5>
-                <span><p class="member_role">Technology & Operations</p>Founder PujariG.com, Berlin & Lucknow</span>
+                <span><p class="member_role">Technology & Operations</p>Founder pujarig.com, Berlin & Lucknow</span>
                 
               </div>
             </div>
