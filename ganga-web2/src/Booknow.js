@@ -203,6 +203,7 @@ class Booknow extends Component {
           />  */}
         
             <div className="form-group">
+              <p style={{ color: '#ff7700' }}>Submit your requirements and we will get back to you.</p>
               <label >Date and Time<sup>*</sup></label>
               <DatePicker className="datepicker" id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}
                 showPopperArrow={false}
