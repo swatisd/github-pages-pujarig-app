@@ -103,7 +103,7 @@ class Home extends Component {
             <div className="carousel-item active">
             <img src={window.location.origin+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider1">
-              <h2>Welcome to PujariG</h2>
+              <h2>Welcome to pujarig.com</h2>
               <h5>
                 pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
@@ -112,7 +112,7 @@ class Home extends Component {
             <div className="carousel-item">
             <img src={window.location.origin+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider2">
-              <h2>Welcome to PujariG</h2>
+              <h2>Welcome to pujarig.com</h2>
                 <h5>
                 pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
@@ -121,7 +121,7 @@ class Home extends Component {
             <div className="carousel-item">
             <img src={window.location.origin+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider3">
-              <h2>Welcome to PujariG</h2>
+              <h2>Welcome to pujarig.com</h2>
               <h5>
                 pujarig.com facilitates online puja and delivers needed supplies.
                 </h5>
@@ -652,7 +652,7 @@ class Home extends Component {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-4">
-                <span className="copyright">Copyright © PujariG 2019</span>
+                <span className="copyright">Copyright © pujarig.com 2019 - 2020</span>
               </div>
               <div className="col-md-4">
                 <ul className="list-inline social-buttons">
