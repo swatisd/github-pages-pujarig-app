@@ -98,32 +98,33 @@ class Home extends Component {
           className="carousel slide d-none d-md-block"
           data-ride="carousel"
         >
+      
          
           <div className="carousel-inner">
             <div className="carousel-item active">
             <img src={window.location.origin+"/img/slider1.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider1">
-              <h2>Welcome to pujarig.com</h2>
+              <h2>Welcome to <a href="https://pujarig.com">pujarig.com</a>!</h2>
               <h5>
-                pujarig.com facilitates online puja and delivers needed supplies.
+                 We deliver the needed Pujan Samagri. Our Pandit Ji conducts Online Puja. Cost Effective and Worry Free !
                 </h5>
               </div>
             </div>
             <div className="carousel-item">
             <img src={window.location.origin+"/img/slider2.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider2">
-              <h2>Welcome to pujarig.com</h2>
+              <h2>Welcome to <a href="https://pujarig.com">pujarig.com</a>!</h2>
                 <h5>
-                pujarig.com facilitates online puja and delivers needed supplies.
+                 We deliver the needed Pujan Samagri. Our Pandit Ji conducts Online Puja. Cost Effective and Worry Free !
                 </h5>
               </div>
             </div>
             <div className="carousel-item">
             <img src={window.location.origin+"/img/slider3.jpg"} className="d-block w-100" alt="..." />
               <div className="carousel-caption d-none d-md-block slider3">
-              <h2>Welcome to pujarig.com</h2>
+              <h2>Welcome to <a href="https://pujarig.com">pujarig.com</a>!</h2>
               <h5>
-                pujarig.com facilitates online puja and delivers needed supplies.
+                 We deliver the needed Pujan Samagri. Our Pandit Ji conducts Online Puja. Cost Effective and Worry Free !
                 </h5>
               </div>
             </div>
@@ -165,8 +166,7 @@ class Home extends Component {
                 </h2>
                 </Bounce>
                 <h3 className="section-subheading text-muted">
-                  pujarig.com facilitates online puja and delivers needed
-                  supplies.
+                 We deliver the needed Pujan Samagri. Our Pandit Ji conducts Online Puja. Cost Effective and Worry Free !
                 </h3>
               </div>
             </div>
@@ -279,8 +279,9 @@ class Home extends Component {
                       <div className="timeline-body">
                         <p className="text-muted">
                           We wanted to have puja rituals for Grih Pravesh according to the north
-                          Indian traditions. But we could not find a pandit ji in Berlin. Our family pandit ji
-                          came online to give us the directions to perform the rituals rightly.
+                          Indian traditions. But we could not find a Pandit Ji in Berlin. Our family Pandit Ji
+                          came online. He instructed us from Sthanapana to Visarjan with Mantra Jaaps. 
+                          We could rightly perform the rituals under his guidence. 
                           
                         </p>
                         <p className="text-muted">It was a huge satisfaction as an expat!</p>
@@ -302,7 +303,7 @@ class Home extends Component {
                       </div>
                       <div className="timeline-body">
                         <p className="text-muted">
-                          To benefit others like us, pujarig.com was incepted. We onboarded qualified PujariGs who are available on
+                          To benefit others like us, pujarig.com was incepted. We onboarded qualified Pandit Ji who are available on
                           various online channels across different timezones.
                         </p>
                       </div>
@@ -373,7 +374,7 @@ class Home extends Component {
                 <hr className="abtus"></hr></h2>
                 </Bounce>
                 <h3 className="section-subheading text-muted">
-                   We are a team of IIT Kanpur engineers with several years of IT experience.
+                   We are a team of IIT Kanpur graduates with several years of IT experience.
                 </h3>
               </div>
             </div>
@@ -384,7 +385,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/ManishSingh.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Manish Pratap Singh</h5>
-                <span><p class="member_role">Technology & Operations</p>Founder pujarig.com, Berlin & Lucknow</span>
+                <span><p class="member_role">Technology & Operations</p>Founder pujarig.com Berlin & Lucknow</span>
                 
               </div>
             </div>
@@ -406,7 +407,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/mp.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Mahendra Pratap</h5>
-                <span><p class="member_role">UX Incubator</p> CEO Shiksha Infotech Incubation Centre, Bangaluru</span>
+                <span><p class="member_role">UX Incubator</p> CEO Shiksha Infotech Incubation Centre Bangaluru</span>
                 
               </div>
             </div>
@@ -417,7 +418,7 @@ class Home extends Component {
               <div class="pic"><img src={window.location.origin+"/img/sankum.jpg"} class="img-fluid" alt=""/></div>
               <div class="member-info">
                 <h5>Sanjeev Mishra</h5>
-                <span><p class="member_role">Digital Marketing Strategy</p>Director Navyug Infosolutions, Noida</span>
+                <span><p class="member_role">Digital Marketing Strategy</p>Director Navyug Infosolutions Noida</span>
                 
               </div>
             </div>
@@ -448,13 +449,13 @@ class Home extends Component {
               <h3>What personal data do we store?</h3>
               <p>
                 We primarily collect email, mobile phone, name, and address. We
-                may ask for additional details to facilitate online Puja
+                may ask for additional details to facilitate Online Puja
                 (Example: Skype Id).
               </p>
               <hr />
               <h3>How do we use your data?</h3>
               <p>
-                We use your data to to perform online puja and to send Puja ingredients.
+                We use your data to to perform Online Puja and to send Puja ingredients.
               </p>
               <hr />
               <h3>Do we share data with anyone?</h3>
@@ -684,9 +685,9 @@ class Home extends Component {
                   <li className="list-inline-item">
                     <a href="#legal">Impressum</a>
                   </li>
-                  <li className="list-inline-item">
+                  {/* <li className="list-inline-item">
                     <a href="#sitemap">Sitemap</a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

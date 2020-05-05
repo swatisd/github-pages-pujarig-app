@@ -6,7 +6,7 @@ import Booknow from "./Booknow";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import {Image, Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 
 
@@ -32,13 +32,14 @@ class App extends React.Component {
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" id="mainNav">
         <div className="container" >    
-        <Link to="/" className="navbar-brand js-scroll-trigger ">
-              <img className="logo" src={window.location.origin + "/img/logoold.png"} alt="pujarig.com" />
-            </Link>
+          
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
+          
           <div className="container  text-uppercase p-2">
-            
+          <Link to="/" className="navbar-brand js-scroll-trigger ">
+              <Image className="logo" src={window.location.origin + "/img/logoold.png"} alt="pujarig.com" fluid />
+            </Link>
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                   <Nav.Link className="nav-link" href="/#services">

@@ -203,7 +203,7 @@ class Booknow extends Component {
           />  */}
         
             <div className="form-group">
-              <p style={{ color: '#ff7700' }}>Submit your requirements and we will get back to you.</p>
+              <p style={{ color: '#ff8800' }}>This form is not a binding contract. We get back to you within one working day.</p>
               <label >Date and Time<sup>*</sup></label>
               <DatePicker className="datepicker" id="datetime" selected={this.state.datetime} onChange={this.handleDateChange}
                 showPopperArrow={false}
@@ -278,7 +278,7 @@ class Booknow extends Component {
               <textarea className="form-control" rows="3" name="customerNeedsNComments" id="customerNeedsNComments" cols="50" onChange={this.handleInputChange} placeholder="eg: I need puja to be performed according to the north Indian traditions. I would like to know puja the samagri and duration." value={this.state.customerNeedsNComments}></textarea>
             </div>
             <div className="form-group">
-              <label >By clicking 'Submit' button, you agree to the <a className="booktc" href="/#termsconditions"> Terms and Conditions</a></label>
+              <label >By clicking 'Submit' button, you agree to the <a className="booktc"  target="_blank" href="/#termsconditions"> Terms and Conditions</a></label>
               <button disabled={!this.state.okToSend} id="submit" className="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button>
               {/* <button onSubmit={this.onSubmit} id="submit" className="btn btn-primary btn-lg text-uppercase btnsubmit btn-block" type="submit">Submit</button> */}
               <small hidden={this.state.okToSend} id="submitHelp" className="form-text  error-msg">
