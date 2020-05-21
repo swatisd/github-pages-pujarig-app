@@ -29,11 +29,11 @@ class PujariGCommon {
             }
           }
         }
-        return data;
+        return !data ? state : data;
         }
         
-        loginURI() {
-          return "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" +  this.getCallbackUrl();
+        loginURI(callbackPath) {
+          return "https://auth.pujarig.com/login?response_type=token&client_id=4f2mhs8n77ceod461gt5cvvhbt&redirect_uri=" +  this.getCallbackUrl(callbackPath);
         }
 
         logoutURI () {
@@ -44,8 +44,8 @@ class PujariGCommon {
           return window.location.href.indexOf('localhost') < 0;
         }
         
-        getCallbackUrl() {
-          return (this.isProd() ? 'https://pujarig.com/booknow' : 'http://localhost:3000/booknow');
+        getCallbackUrl(callbackPath) {
+          return (this.isProd() ? 'https://pujarig.com/' : 'http://localhost:3000/') + (!callbackPath ? "" : callbackPath);
         }
 }
 
