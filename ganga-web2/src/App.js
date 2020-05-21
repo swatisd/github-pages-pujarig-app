@@ -23,6 +23,18 @@ const loginUri = common.loginURI();
 
 // export default function BasicExample() {
 class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      idToken: "userNotLoggedin",
+    };
+  }
+
+  componentDidMount() {
+    const state = common.loginHelper(this.state);
+    this.setState(state);
+  }
 
   render() {
     
