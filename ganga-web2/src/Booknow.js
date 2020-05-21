@@ -98,7 +98,7 @@ class Booknow extends Component {
           // console.log("got 401 or 0");
           // console.log(this.loginURI());
           // console.log("state beofre login: " + JSON.stringify( Object.assign({}, this.state)));
-          window.location = common.loginURI() + "&state=" +
+          window.location = common.loginURI("booknow") + "&state=" +
             btoa(JSON.stringify( Object.assign({}, this.state)));
          
         } else if (req.status === 400) {
