@@ -7,6 +7,14 @@ import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
 import {Image, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import "./App.css";
+//import "./test.js";
+import Owldemo1 from './Owldemo1' ; 
+import Owldemo3 from './Owldemo3' ;
+import Owldemo2 from './Owldemo2' ; 
+import OwlDemo from './Owldemo';
+import Detail from './Detail';
+
 
 
 
@@ -26,9 +34,10 @@ class App extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = {
+    this.state = { 
       idToken: "userNotLoggedin",
     };
+
   }
 
   componentDidMount() {
@@ -39,12 +48,12 @@ class App extends React.Component {
   render() {
     
     return (
-
       <Router>
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top" id="mainNav">
         <div className="container" >    
           
+                        
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
           
@@ -85,12 +94,15 @@ class App extends React.Component {
               </ul>
           </div>
         </Navbar.Collapse>
-        </div>
+        </div> 
         </Navbar>
       <Switch>
+      {/* on click event image detail page section*/}
         <Route exact path="/booknow" component={Booknow} />
         <Route exact path="/" component={Home} />
+        <Route exact path="/Detail" component={Detail} />
       </Switch>
+      
     </Router>
     );
   }

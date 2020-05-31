@@ -1,0 +1,36 @@
+.title  
+
+{  
+
+        margin-bottom: 20px;  
+
+        padding:20px  
+
+}  
+
+.img  
+
+{  
+
+        height: 260px;width:100%  
+
+}  
+.puja-name {
+        
+        font-size: 1rem;
+        font-weight: bold;
+        color: #444;
+}
+.pleft1 {
+        margin-left: 17%;
+}
+.pleft2{
+        margin-left: 24%;
+}
+.pleft3 {
+        margin-left: 33%;
+}
+.owl-carousel .owl-item img {
+       
+        width: 90%;
+    }

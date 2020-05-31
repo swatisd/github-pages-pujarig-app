@@ -288,7 +288,7 @@ class Booknow extends Component {
           </form>
 
         </div>
-
+     
       </div>
     );
   }

@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
 import PujariGCommon from "./PujariGCommon";
+import Owldemo1 from './Owldemo1' ;
+import Owldemo3 from './Owldemo3' ; 
+import Owldemo2 from './Owldemo2' ; 
+
+import OwlDemo from './Owldemo'
 const common = new PujariGCommon();
 
 
@@ -24,7 +29,7 @@ class Home extends Component {
       idToken: "userNotLoggedin",
       queryButtonHidden: true
     };
-
+ 
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -155,6 +160,8 @@ class Home extends Component {
           </a>
         </div>
 
+          
+     
         <section className="page-section" id="services">
           <div className="container">
             <div className="row">
@@ -170,82 +177,40 @@ class Home extends Component {
                 </h3>
               </div>
             </div>
-            <div className="row text-center animated bounce">
-            
-              <div className="col-md-4 showbox ">
-              
-                <img
-                  className="img-fluid  "
-                  src={window.location.origin+"/img/one.jpg"}
-                  alt="Satyanarayan Vrat Katha"
-                />
-               
-                <h4 className="service-heading">Satyanarayan Vrat Katha</h4>
-              </div>
-              <div className="col-md-4 showbox">
-                <img
-                  className="img-fluid "
-                  src={window.location.origin+"/img/two.jpg"}
-                  alt="Satyanarayan Vrat Katha"
-                />
-                <h4 className="service-heading ">Grih Parvesh</h4>
-              </div>
-              <div className="col-md-4 showbox ">
-              
-                <img className="img-fluid" src={window.location.origin+"/img/mundan.jpg"} alt="Mundan" />
-                
-                <h4 className="service-heading">Mundan</h4>
-              </div>
-            </div>             
+            <Owldemo1></Owldemo1>
+
+
           </div>
         </section>
+        
+          
+
 
         <section className="page-section panditG" id="services">
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-              <Bounce>
-                <h2 className="section-heading text-uppercase">
-                  Featured PujariG
-                  <hr className="fpc"></hr>
-                </h2>
-                </Bounce>
-                <h3 className="section-subheading text-muted">
-                  Meet our esteemed PujariGs
-                </h3>
+                      <Bounce>
+                        <h2 className="section-heading text-uppercase">
+                          Featured PujariG
+                          <hr className="fpc"></hr>
+                        </h2>
+                        </Bounce>
+                        <h3 className="section-subheading text-muted">
+                          Meet our esteemed PujariGs
+                         </h3>
               </div>
             </div>
-            <div className="row text-center animated bounce">
+
+            <Owldemo2></Owldemo2>
             
-              <div className="col-md-4   ">
-              
-                <img
-                  className="img-fluid  "
-                  src={window.location.origin+"/img/VimalTripathi.jpeg"}
-                  alt="Vimal Tripathi"
-                />
-               
-                <h5 className="service-heading effect1">P. Vimal Tripathi Ji</h5>
-                <h6>Lucknow</h6>
-              </div>
-              <div className="col-md-4 ">
-                <img
-                  className="img-fluid "
-                  src={window.location.origin+"/img/UmakantSharma.jpeg"}
-                  alt="Umakant Sharma"
-                />
-                <h5 className="service-heading effect1">P. Umakant Sharma Ji</h5> <h6>Bhopal</h6>
-              </div>
-              <div className="col-md-4  ">
-              
-                <img className="img-fluid" src={window.location.origin+"/img/DwarikaPrasadGautam.jpeg"} alt="P. Gautam" />
-                
-                <h5 className="service-heading effect1">P. Dwarika Prasad Gautam Ji</h5><h6> Jhansi</h6>
-              </div>
-            </div>             
+                      
           </div>
-        </section>       
-        
+
+        </section>   
+ 
+ {/*pandit section */} 
+         
 
         <section className="page-section" id="about">
           <div className="container">
@@ -365,6 +330,7 @@ class Home extends Component {
             </div>
           </div>
         </section>
+       
         <section className="page-section team" id="about">
           <div className="container">
             <div className="row">
@@ -693,11 +659,10 @@ class Home extends Component {
             </div>
           </div>
         </footer>
-
       
       </div>
     );
-  }
+  } 
 }
 
 // Notice the use of %PUBLIC_URL% in the tags above. It will be replaced with the URL of the `public` folder during the build.
